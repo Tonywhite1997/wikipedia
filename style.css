@@ -1,0 +1,313 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    /* overflow-x: hidden; */
+}
+h3{
+    font-size: 15px;
+}
+p{
+    font-size: 12px;
+    color: rgb(88, 88, 88);
+}
+a{
+    text-decoration: none;
+    color: rgb(45, 89, 199);
+}
+h3 a{
+    color: rgb(45, 89, 199);
+    text-decoration: none;
+}
+h1{
+    font-weight: 500;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+span{
+    font-size: 35px;
+}
+.main{
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin:50px 0 20px;
+    line-height: 30px;
+}
+.header p{
+    font-size: 15px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 35%);
+}
+.image img{
+    height: 180px;
+    width: 200px;
+}
+.first-text, .second-text, .third-text, .forth-text, .fifth-text{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    /* border: 1px solid red; */
+}
+.first-text-content-1, .first-text-content-2, .second-text-content-1, .second-text-content-2, .third-text-content-1, .third-text-content-2, .forth-text-content-1, .forth-text-content-2, .fifth-text-content-1, .fifth-text-content-2{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.second-text{
+    width: 500px;
+}
+.third-text{
+    width: 540px;
+}
+.forth-text{
+    width: 500px;
+}
+.fifth-text{
+    width: 420px;
+}
+.search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-field{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    outline: none;
+    display: flex;
+}
+.select{
+    position: absolute;
+    display: flex;
+    right: 60px;
+    width: 40px;
+    height: 30px;
+    outline: none;
+}
+.fa-search{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(45, 89, 199);
+    color: white;
+    font-size: 20px;
+}
+.fa-search:hover{
+    cursor: pointer;
+    background: rgb(81, 123, 228);
+}
+.select:hover{
+    cursor: pointer;
+    background: rgb(244, 241, 241);
+}
+.first-text-content-1:hover, .first-text-content-2:hover, .second-text-content-1:hover, .second-text-content-2:hover, .third-text-content-1:hover, .third-text-content-2:hover, .forth-text-content-1:hover, .forth-text-content-2:hover, .fifth-text-content-1:hover, .fifth-text-content-2:hover{
+    background: rgb(244, 241, 241);
+    cursor: pointer;
+}
+.last-text{
+    height: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.symbol{
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.btn{
+    width: 300px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(35, 87, 221);
+    outline: none;
+}
+.btn:hover{
+    background: white;
+    cursor: pointer;
+}
+.line{
+    font-size: 15px;
+    color: rgb(227, 218, 218);
+}
+.section-1-line{
+    width: 95%;
+    margin-top: 30px;
+}
+.footer-image{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.store-image{
+    height: 35px;
+    width: 120px;
+    margin-right: 10px;
+}
+.footer-section{
+    width: 100%; 
+    height: 50vh;
+    display: flex;
+    /* border: 1px solid green; */
+    margin: 0px;
+    padding: 0px;
+}
+.footer-container{
+    position: relative;
+    width: 100%;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* border: 1px solid red; */
+}
+.wikimedia{
+    display: flex;
+    margin: 10px 0;
+    line-height: 16px;
+    word-spacing: 2px;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.download-links{
+    display: flex;
+    margin-left: 20px;
+    line-height: 16px;
+    word-spacing: 2px;
+    background: rgb(245, 245, 245);
+    padding: 5px;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.download-links p a .text-link{
+    margin-bottom: 10px;
+}
+.download-links-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-link{
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.flex-image{
+    /* display: none; */
+    /* flex-direction: column; */
+    margin-top: 10px;
+}
+.right-section{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.text-converter{
+    font-size: 13px;
+    color: rgb(113, 112, 112);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 1px solid purple; */
+    width: 100%;
+}
+.commons, .wikivoyage, .wiktionary, .wikibooks, .wikinews, .wikidata, 
+.wikiversity, .wikiquote, .mediawiki, .wikisource, .wikispecies, .metawiki{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 18px;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+    margin-left: 20px;
+}
+.commons:hover, .wikivoyage:hover, .wiktionary:hover, .wikibooks:hover, .wikinews:hover, .wikidata:hover, 
+.wikiversity:hover, .wikiquote:hover, .mediawiki:hover, .wikisource:hover, .wikispecies:hover, .metawiki:hover{
+    background: rgb(244, 241, 241);
+}
+.wikidata img, .wikinews img{
+    width: 40px;
+    height: 25px;
+}
+.horizontal-2{
+    width: 100px;
+    color: black;
+}
+.footer-2{
+    height: 10vh;
+}
+.horizontal-2{
+    width: 100%;
+    color: black;
+    margin-top: 10px;
+}
+.footer2-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.content-1{
+}
+.the-list{
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: normal;
+}
+.the-list li:hover{
+    text-decoration: underline;
+}
